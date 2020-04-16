@@ -3,7 +3,7 @@
     "displayName": "Emacs",
     "description": "Emacs emulation for Visual Studio Code",
     "icon": "images/icon.png",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "publisher": "vscodeemacs",
     "homepage": "https://github.com/VSCodeEmacs/Emacs",
     "repository": "VSCodeEmacs/Emacs",
@@ -33,6 +33,10 @@
     "main": "./out/src/extension",
     "contributes": {
         "keybindings": [
+            {
+                "key": "ctrl+x ctrl+c",
+                "command": "workbench.action.quit"
+            },
             {
                 "key": "right",
                 "command": "emacs.cursorRight",
@@ -130,11 +134,13 @@
             },
             {
                 "key": "alt+f",
+                "mac": "command+f",
                 "command": "emacs.cursorWordRight",
                 "when": "editorTextFocus"
             },
             {
                 "key": "alt+b",
+                "mac": "command+f",
                 "command": "emacs.cursorWordLeft",
                 "when": "editorTextFocus"
             },
@@ -170,52 +176,63 @@
             },
             {
                 "key": "alt+v",
+                "mac": "command+v",
                 "command": "emacs.cursorPageUp",
                 "when": "editorTextFocus && !suggestWidgetVisible"
             },
             {
                 "key": "alt+v",
+                "mac": "command+v",
                 "command": "closeFindWidget",
                 "when": "editorFocus && findWidgetVisible"
             },
             {
                 "key": "alt+shift+.",
+                "mac": "command+shift+.",
                 "command": "emacs.cursorBottom",
                 "when": "editorTextFocus"
             },
             {
                 "key": "alt+shift+.",
+                "mac": "command+shift+.",
                 "command": "closeFindWidget",
                 "when": "editorFocus && findWidgetVisible"
             },
             {
                 "key": "alt+shift+,",
+                "mac": "command+shift+,",
                 "command": "emacs.cursorTop",
                 "when": "editorTextFocus"
             },
             {
                 "key": "alt+shift+,",
+                "mac": "command+shift+,",
                 "command": "closeFindWidget",
                 "when": "editorFocus && findWidgetVisible"
             },
             {
                 "key": "alt+shift+1",
+                "mac": "command+shift+1",
                 "command": "emacs.shellCommand"
             },
             {
                 "key": "alt+g g",
+                "mac": "command+g g",
                 "command": "workbench.action.gotoLine"
             },
             {
                 "key": "alt+g n",
+                "mac": "command+g n",
                 "command": "editor.action.marker.next"
             },
             {
                 "key": "alt+g p",
+                "mac": "command+g p",
                 "command": "editor.action.marker.prev"
             },
             {
                 "key": "alt+g g",
+                "mac": "command+g g",
                 "command": "closeFindWidget",
                 "when": "editorFocus && findWidgetVisible"
             },
@@ -226,6 +243,7 @@
             },
             {
                 "key": "alt+shift+5",
+                "mac": "command+shift+5",
                 "command": "editor.action.startFindReplaceAction",
                 "when": "editorFocus"
             },
@@ -251,6 +269,7 @@
             },
             {
                 "key": "ctrl+alt+n",
+                "mac": "ctrl+command+n",
                 "command": "editor.action.addSelectionToNextFindMatch",
                 "when": "editorFocus"
             },
@@ -276,6 +295,7 @@
             },
             {
                 "key": "alt+d",
+                "mac": "command+d",
                 "command": "deleteWordRight",
                 "when": "editorTextFocus && !editorReadonly"
             },
@@ -296,11 +316,13 @@
             },
             {
                 "key": "alt+w",
+                "mac": "command+w",
                 "command": "emacs.M-w",
                 "when": "editorTextFocus"
             },
             {
                 "key": "alt+w",
+                "mac": "command+w",
                 "command": "closeFindWidget",
                 "when": "editorFocus && findWidgetVisible"
             },
@@ -385,11 +407,13 @@
             },
             {
                 "key": "alt+;",
+                "mac": "command+;",
                 "command": "editor.action.blockComment",
                 "when": "editorTextFocus && !editorReadonly"
             },
             {
                 "key": "alt+;",
+                "mac": "command+;",
                 "command": "closeFindWidget",
                 "when": "editorFocus && findWidgetVisible"
             },
@@ -587,10 +611,12 @@
             },
             {
                 "key": "alt+x",
+                "mac": "command+x",
                 "command": "workbench.action.showCommands"
             },
             {
                 "key": "ctrl+alt+space",
+                "mac": "ctrl+command+space",
                 "command": "workbench.action.toggleSidebarVisibility"
             },
             {
@@ -614,6 +640,7 @@
             },
             {
                 "key": "alt+backspace",
+                "mac": "command+backspace",
                 "command": "deleteWordLeft",
                 "when": "editorTextFocus && !editorReadonly"
             }
