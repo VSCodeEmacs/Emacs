@@ -1,16 +1,19 @@
 <h2 align="center"><img src="https://github.com/VSCodeEmacs/Emacs/blob/master/images/icon.png?raw=true" height=123><br>VSCodeEmacs</h2>
 <p align="center"><strong>Emacs emulation for Visual Studio Code</strong></p>
 
-This was a fork of I don't remember the original extension name but almost ALL the Emacs extensions brag to be Emacs-Friendly when all fails to implement such basic Emacs behaviors.
-I had to fork and fix the little issues.
-To give you an example, in Emacs when you use `Ctrl+Space` to enter selection mode and then select some text and press `DEL` key the text is removed and the selection mode is exited.
-All the forks of forks don't implement this and when you select some text and `DEL` the text is erased but the selection mode is still operating, which is annoying for a real Emacs user, I fixed it and proposed a PR in one of the extension repository but they didn't even accept and instead ignored my answers when they asked my motivation.
-Coding should be free and share, not about maintaining some domains like a master seeking for some stars and then denying the whole purpose of the product you hold..
-
-In this version I also added a minibuffer feature. Press `alt+shift+1` to open it.
-In the original Emacs this keybinding is to run a shell command in the mini buffer.
+This is a fork of... I don't remember the original extension name but there are tons of Emacs extensions and many of them claims to be Emacs-friendly but many fails to implement basic Emacs behaviors.
+To give you an example, in Emacs when you use `Ctrl+Space` to enter selection mode and then select some text, if you press `DEL` the text is removed and the selection mode is exited.
+No fork had this implemented, instead the text would get erased but the selection mode would still be operating, which was annoying for a real Emacs user I believe.
+At first I proposed a PR in one of the repository but they didn't even review the code and the motivation behind, they just asked how it would improve the extension, after I explained they just denied.
+That is why I made another extension, it's not just to have my own version and pollute the marketplace even more. Coding should be free and share, not maintaining some domains and pretend to be a lord of thumb ups over denying the main purpose of the product you hold.
 
 
-Now if you like it, Please ENjoy and if you want to improve the extension You're free to fork, modify and make a Push Request for the sake of perfection.
+I also added the chord `alt+shift+1` which will open a minibuffer. Guess what `alt+shift+1` do in Emacs ?
+
+
+Anyways I hope you enjoy this modification. Please if you want to improve the extension you're free to fork, modify and make push request (for the sake of perfection).
+
+Special thanks to:
+- flindeberg for fixing `C-w` glitch in the remote context and adding some mac keybindings.
 
 Emacs FTW.
