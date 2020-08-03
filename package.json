@@ -118,6 +118,11 @@
                 "when": "editorTextFocus && !editorReadonly"
             },
             {
+                "key": "alt+- alt+d",
+                "command": "deleteWordLeft",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
                 "key": "ctrl+a",
                 "command": "emacs.cursorHome",
                 "when": "editorTextFocus"
