@@ -544,11 +544,11 @@
             },
             {
                 "key": "ctrl+x 2",
-                "command": "workbench.action.splitEditor"
+                "command": "workbench.action.splitEditorUp"
             },
             {
                 "key": "ctrl+x 3",
-                "command": "workbench.action.toggleEditorGroupLayout"
+                "command": "workbench.action.splitEditorLeft"
             },
             {
                 "key": "ctrl+x o",
