@@ -11,7 +11,7 @@ That is why I made another extension, it's not just to have my own version and p
 I also added the chord `alt+shift+1` which will open a minibuffer. Guess what `alt+shift+1` do in Emacs ?
 
 
-Anyways I hope you enjoy this modification. Please if you want to improve the extension you're free to fork, modify and make push request (for the sake of perfection).
+Anyways I hope you enjoy this modification. Please if you want to improve the extension you're free to fork, modify and make pull request (for the sake of perfection).
 
 Special thanks to:
 - flindeberg for fixing `C-w` glitch in the remote context and adding some mac keybindings.
