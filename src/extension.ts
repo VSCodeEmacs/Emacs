@@ -53,8 +53,10 @@ function initMarkMode(context: vscode.ExtensionContext): void {
     context.subscriptions.push(vscode.commands.registerCommand(
         'emacs.enterMarkMode', () => {
             if (inMarkMode && !markHasMoved) {
+                vscode.window.setStatusBarMessage("Mark deactivated", 1000);
                 inMarkMode = false;
             } else {
+                vscode.window.setStatusBarMessage("Mark activated", 1000);
                 initSelection();
                 inMarkMode = true;
                 markHasMoved = false;
