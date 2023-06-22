@@ -140,7 +140,7 @@
             },
             {
                 "key": "alt+b",
-                "mac": "cmd+f",
+                "mac": "cmd+b",
                 "command": "emacs.cursorWordLeft",
                 "when": "editorTextFocus"
             },
